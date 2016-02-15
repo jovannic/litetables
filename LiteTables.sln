@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiteTables.Convert", "LiteTables.Convert\LiteTables.Convert.csproj", "{90414D36-4CFD-43DC-94B2-0EE36AF9CF14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiteTables", "LiteTables\LiteTables.csproj", "{1CCA171C-364F-4286-B6A3-816A18A28573}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiteTables.Test", "LiteTables.Test\LiteTables.Test.csproj", "{F9DDAC3B-4E2D-4010-A00A-CD7B427A5CA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90414D36-4CFD-43DC-94B2-0EE36AF9CF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90414D36-4CFD-43DC-94B2-0EE36AF9CF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90414D36-4CFD-43DC-94B2-0EE36AF9CF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90414D36-4CFD-43DC-94B2-0EE36AF9CF14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CCA171C-364F-4286-B6A3-816A18A28573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CCA171C-364F-4286-B6A3-816A18A28573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CCA171C-364F-4286-B6A3-816A18A28573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CCA171C-364F-4286-B6A3-816A18A28573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9DDAC3B-4E2D-4010-A00A-CD7B427A5CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9DDAC3B-4E2D-4010-A00A-CD7B427A5CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9DDAC3B-4E2D-4010-A00A-CD7B427A5CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9DDAC3B-4E2D-4010-A00A-CD7B427A5CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

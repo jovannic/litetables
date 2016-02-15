@@ -1,0 +1,25 @@
+# Data tyes #
+
+int : singed 4 byte integer, little endian
+string : UTF-8
+single : IEEE 754, single precision, little endian
+
+# Format #
+
+header:
+"LTBL", 8 bytes ASCII
+[short versionNumber]
+
+strings:
+[int stringCount]
+[int offset, int length] * stringCount
+[int length, byte[] stringData]
+
+tables:
+[int tableCount]
+[
+	[int nameIndex, int rowCount, int rowLength]
+	[int columnCount]
+	[int nameIndex, byte dataType] * columnCount
+    [int length, byte[] tableData]
+] * tableCount
