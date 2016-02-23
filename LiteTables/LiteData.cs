@@ -20,7 +20,8 @@ namespace LiteTables {
                 case ColumnType.Single:
                     return (int)ReadSingle(data, offset);
                 case ColumnType.String:
-                    string s = stringTable[ReadInt32(data, offset)];
+                    int index = ReadInt32(data, offset);
+                    string s = index >= 0 ? stringTable[index] : null;
                     int value;
                     return int.TryParse(s, out value) ? value : 0;
                 default:
@@ -35,7 +36,8 @@ namespace LiteTables {
                 case ColumnType.Single:
                     return ReadSingle(data, offset);
                 case ColumnType.String:
-                    string s = stringTable[ReadInt32(data, offset)];
+                    int index = ReadInt32(data, offset);
+                    string s = index >= 0 ? stringTable[index] : null;
                     float value;
                     return float.TryParse(s, out value) ? value : 0;
                 default:
@@ -50,7 +52,9 @@ namespace LiteTables {
                 case ColumnType.Single:
                     return ReadSingle(data, offset).ToString();
                 case ColumnType.String:
-                    return stringTable[ReadInt32(data, offset)];
+                    int index = ReadInt32(data, offset);
+                    string s = index >= 0 ? stringTable[index] : null;
+                    return s;
                 default:
                     throw new InvalidCastException();
             }
