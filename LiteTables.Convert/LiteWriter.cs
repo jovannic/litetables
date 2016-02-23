@@ -47,7 +47,7 @@ namespace LiteTables.Convert {
         }
 
         public void Write(string fileName) {
-            using (var stream = File.OpenWrite(fileName))
+            using (var stream = File.Open(fileName, FileMode.Create))
             using (var buffered = new BufferedStream(stream)) {
                 Write(buffered);
             }
